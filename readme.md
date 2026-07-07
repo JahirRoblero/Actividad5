@@ -1,0 +1,1 @@
+https://bruhgrow.com/svg-icons?search=user&collection=entypo&icon=user
