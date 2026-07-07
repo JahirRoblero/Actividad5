@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+
+        <form>
+            <div>
+                <h2>Sesión</h2>
+                <label>Correo electronico</label>
+                <input type="text" name="email" id="email">
+                <span class="emergent-label" id="correo-label">Correo No Válido!</span>
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input type="text" name="password" id="password">
+                <span class="emergent-label" id="password-label">Contraseña No Válida!</span>
+            </div>
+
+            <button type="button"class="boton-iniciar" id="boton-iniciar">
+                Iniciar
+            </button>
+
+            <p class="badge-exito" id="badgeExito">
+                Inicio de sesión válido
+            <!--<a href="index.html" class="link"></a>--> 
+            </p>
+
+        </form>
+
+    </div>
+</body>
+</html>
