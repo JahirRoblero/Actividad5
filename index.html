@@ -33,52 +33,108 @@
     </header>
 
     <section>
-      <div class="bienvenida">
+      <div class="bienvenida" id="bienvenida">
         <h2>Bienvenido al Sistema</h2>
       </div>
 
-      <form>
+      <form id="formCapturaUsuario" class="apartado oculto">
         <div class="formulario">
-          <label>Nombre del usuario: </label>
-          <input type="text" placeholder="Ej. Angel Jahir" />
-          <label>Correo electronico: </label>
-          <input type="text" placeholder="Ej. Jahirgomezyt2@gmail.com" />
-          <label>Contraseña:</label>
-          <input type="password" /> 
-          <button>Guardar Usuario</button>
+          <h2>Captura de usuarios</h2>
+
+          <label for="nombreUsuarioCaptura">Nombre del usuario:</label>
+          <input
+            type="text"
+            id="nombreUsuarioCaptura"
+            placeholder="Ej. Angel Jahir"
+          />
+
+          <label for="correo">Correo electrónico:</label>
+          <input
+            type="text"
+            id="correo"
+            placeholder="Ej. Jahirgomezyt2@gmail.com"
+          />
+
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" id="contraseña" />
+
+          <button type="submit">Guardar Usuario</button>
+        </div>
+      </form>
+
+      <form id="formValidarAlumno" class="apartado oculto">
+        <div class="formulario">
+          <h2>Validar alumno</h2>
+
+          <label for="nombreAlumno">Nombre del alumno:</label>
+          <input type="text" id="nombreAlumno" placeholder="Ej. Jahir" />
+
+          <label for="numeroControl">Número de control:</label>
+          <input
+            type="text"
+            id="numeroControl"
+            placeholder="Ej. 231609"
+            maxlength="6"
+          />
+
+          <label for="fechaNacimiento">Fecha de nacimiento:</label>
+          <input type="date" id="fechaNacimiento" />
+
+          <button type="submit">Validar Alumno</button>
         </div>
       </form>
     </section>
 
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>Menú</h2>
+
+        <button
+          class="btn-cerrar-sidebar"
+          type="button"
+          onclick="toggleSidebar()"
+        >
+          ✕
+        </button>
+      </div>
+
+      <nav class="sidebar-menu">
+        <button
+          class="opcion-sidebar"
+          type="button"
+          onclick="toggleSubmenuUsuarios()"
+        >
+          <span>Usuarios</span>
+          <span id="flechaUsuarios">▼</span>
+        </button>
+
+        <div class="submenu-sidebar" id="submenuUsuarios">
+          <button
+            class="submenu-link"
+            type="button"
+            onclick="mostrarApartado('captura')"
+          >
+            Captura
+          </button>
+
+          <button
+            class="submenu-link"
+            type="button"
+            onclick="mostrarApartado('alumnos')"
+          >
+            Validar Alumnos
+          </button>
+        </div>
+      </nav>
+    </aside>
+
+    <footer>
+      <p>ALUMNOS: GOMEZ ROBLERO ANGEL JAHIR</p>
+      <p>GUILLERMO ALEJANDRO</p>
+      <p>DOCENTE: MARTINEZ NIETO ADELINA</p>
+    </footer>
+
+    <script src="js/utileria.js"></script>
     <script src="js/index.js"></script>
   </body>
-
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <h2>Menú</h2>
-
-      <button
-        class="btn-cerrar-sidebar"
-        type="button"
-        onclick="toggleSidebar()"
-      >
-        ✕
-      </button>
-    </div>
-
-    <nav class="sidebar-menu">
-      <button
-        class="opcion-sidebar"
-        type="button"
-        onclick="toggleSubmenuUsuarios()"
-      >
-        <span>Usuarios</span>
-        <span id="flechaUsuarios">▼</span>
-      </button>
-
-      <div class="submenu-sidebar" id="submenuUsuarios">
-        <a href="#">Captura</a>
-      </div>
-    </nav>
-  </aside>
 </html>

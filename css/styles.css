@@ -1,6 +1,9 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -51,6 +54,11 @@ header {
 form{
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+}
+
+section{
+  flex-grow: 1;
 }
 .formulario {
   display: flex;
@@ -61,6 +69,7 @@ form{
   border-radius: 10px;
   padding: 40px;
   box-shadow: 5px 5px 5px #0000;
+  margin-top: 20px;
 }
 
 input {
@@ -77,6 +86,11 @@ button{
   padding: 10px;
   color: white;
   margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
 }
 
 .contenedor-usuario {
@@ -211,4 +225,36 @@ button{
 
 .submenu-sidebar a:hover {
   color: white;
+}
+
+.apartado {
+  display: flex;
+  justify-content: center;
+}
+
+.apartado.oculto,
+.oculto {
+  display: none;
+}
+
+.submenu-link {
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  text-align: left;
+  font-family: "SN Pro", sans-serif;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submenu-link:hover {
+  background: #1e293b;
+  color: white;
+}
+
+footer {
+  background: black;
+  padding: 20px;
+  text-align: center;
 }
