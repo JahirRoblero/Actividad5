@@ -42,7 +42,14 @@ botonIniciar.addEventListener("click", function () {
 
     if (correoOk && passwordOk) {
         badgeExito.classList.add("activo");
-    } else {
+
+        sessionStorage.setItem("usuarioActivo", usuario);
+
+        setTimeout(function () {
+            window.location.href = "index.html";
+        }, 1000);
+        
+    } else {    
         badgeExito.classList.remove("activo");
     }
 
