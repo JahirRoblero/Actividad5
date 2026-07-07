@@ -18,8 +18,67 @@
   </head>
   <body>
     <header>
-      <h1>Usuarios</h1>
-      <p id="nombreUsuario">Jahir Roblero</p>
+      <div class="contenedor-barras">
+        <button class="btn-menu" type="button" onclick="toggleSidebar()">
+          <img id="lineasLaterales" src="img/lineasLaterales.svg" />
+        </button>
+
+        <h1>Usuarios</h1>
+      </div>
+
+      <div class="contenedor-usuario">
+        <img id="imagenUsuario" src="img/usuario.svg" />
+        <p id="nombreUsuario">Jahir Roblero</p>
+      </div>
     </header>
+
+    <section>
+      <div class="bienvenida">
+        <h2>Bienvenido al Sistema</h2>
+      </div>
+
+      <form>
+        <div class="formulario">
+          <label>Nombre del usuario: </label>
+          <input type="text" placeholder="Ej. Angel Jahir" />
+          <label>Correo electronico: </label>
+          <input type="text" placeholder="Ej. Jahirgomezyt2@gmail.com" />
+          <label>Contraseña:</label>
+          <input type="password" /> 
+          <button>Guardar Usuario</button>
+        </div>
+      </form>
+    </section>
+
+    <script src="js/index.js"></script>
   </body>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Menú</h2>
+
+      <button
+        class="btn-cerrar-sidebar"
+        type="button"
+        onclick="toggleSidebar()"
+      >
+        ✕
+      </button>
+    </div>
+
+    <nav class="sidebar-menu">
+      <button
+        class="opcion-sidebar"
+        type="button"
+        onclick="toggleSubmenuUsuarios()"
+      >
+        <span>Usuarios</span>
+        <span id="flechaUsuarios">▼</span>
+      </button>
+
+      <div class="submenu-sidebar" id="submenuUsuarios">
+        <a href="#">Captura</a>
+      </div>
+    </nav>
+  </aside>
 </html>

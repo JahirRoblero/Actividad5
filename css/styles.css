@@ -1,30 +1,214 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
 }
 
-h1, p {
+h1,
+p {
   font-family: "SN Pro", sans-serif;
   font-optical-sizing: auto;
-  font-weight:400;
+  font-weight: 400;
   font-style: normal;
   color: white;
   margin-left: 10px;
 }
 
-p{
-    
+h2{
+  font-family: "SN Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(254, 110, 110);
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+label {
+  font-family: "SN Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+p {
+}
+
+header {
+  position: relative;
+  background: linear-gradient(45deg, #0f172a 51%, #2563eb 99%, #38bdf8 100%);
+}
+form{
+  display: flex;
+  justify-content: center;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #466eff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 5px 5px 5px #0000;
+}
+
+input {
+  background-color: white;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button{
+  background: linear-gradient(45deg, #0f172a 51%, #2563eb 99%, #38bdf8 100%);
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+}
+
+.contenedor-usuario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff8e;
+  border-radius: 8px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#imagenUsuario {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+#lineasLaterales {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 
-header{
-  position: relative;
-  background: linear-gradient(45deg, #0F172A 51%, #2563EB 99%, #38BDF8 100%);
+.contenedor-barras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-menu {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 260px;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  z-index: 999;
+  transition: left 0.3s ease;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.35);
+}
+
+.sidebar.activo {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-header h2 {
+  font-family: "SN Pro", sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.btn-cerrar-sidebar {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 8px;
+}
+
+.opcion-sidebar {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  font-family: "SN Pro", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opcion-sidebar:hover {
+  background: #1e293b;
+}
+
+.submenu-sidebar {
+  display: none;
+  flex-direction: column;
+  margin-left: 15px;
+  border-left: 2px solid #38bdf8;
+}
+
+.submenu-sidebar.activo {
+  display: flex;
+}
+
+.submenu-sidebar a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-family: "SN Pro", sans-serif;
+  padding: 10px 15px;
+}
+
+.submenu-sidebar a:hover {
+  color: white;
 }
