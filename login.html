@@ -5,35 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/login.js"></script>
 </head>
 <body>
     <div class="contenedor">
 
         <form>
             <div>
-                <h2>Sesión</h2>
-                <label>Correo electronico</label>
-                <input type="text" name="email" id="email">
+                <img src="img/user-login.svg" alt="usuario-login" class="usuario-login">
+                <h1>CUSTOMER LOGIN</h1>
+                <label>Email ID</label>
+                <input type="text" name="email" id="email" placeholder="Ejemplo@hotmail.com">
                 <span class="emergent-label" id="correo-label">Correo No Válido!</span>
             </div>
             <div>
-                <label>Contraseña</label>
-                <input type="text" name="password" id="password">
+                <label>Password</label>
+                <input type="password" name="password" id="password" placeholder="********">
                 <span class="emergent-label" id="password-label">Contraseña No Válida!</span>
             </div>
 
             <button type="button"class="boton-iniciar" id="boton-iniciar">
-                Iniciar
+                LOGIN
             </button>
 
             <p class="badge-exito" id="badgeExito">
                 Inicio de sesión válido
-            <!--<a href="index.html" class="link"></a>--> 
             </p>
 
         </form>
 
     </div>
+    <script src="js/login.js"></script>
+    <script src="js/utileria.js"></script>
 </body>
 </html>
