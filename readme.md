@@ -75,6 +75,8 @@ Se usa **`sessionStorage`**, el almacenamiento temporal del navegador que dura m
 ---
 
 ## Estructura del proyecto
+
+```
 PROYECTOLOGIN/
 ├── index.html
 ├── login.html
@@ -106,7 +108,8 @@ PROYECTOLOGIN/
         ├── sidebar-submenu.png
         ├── sidebarMenu.png
         ├── sidebarPrincipal.png
-        └── utileria.png
+        └── utileria.png   
+```
 
 ---
 
