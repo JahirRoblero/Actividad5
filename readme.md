@@ -9,7 +9,7 @@
 **Actividad:** Actividad 5 — Proyecto de Login <br><br><br><br>
 **Docente:** Adelina Martínez Nieto<br><br><br><br>
 **Integrantes:**
-Jahir Roblero
+Gomez Roblero Angel Jahir
 Enríquez Rodríguez Alejandro Guillermo<br><br><br><br>
 **Fecha de entrega:** 08 de julio del 2026<br><br><br><br>
 
@@ -119,23 +119,17 @@ Actividad5/
 ### 3. Navbar (dentro de index.html)
 
 
-![Navbar con nombre de usuario](img/screenshots/navbar-usuario.png)
-![Dropdown abierto con opción Salir del sistema](img/screenshots/navbar-dropdown.png)
+![Navbar con nombre de usuario](img/screenshots/navbarUsuarios.png)
+![Dropdown abierto con opción Salir del sistema](img/screenshots/navBarFinal.png)
 
 ### 4. Sidebar y submenú Usuarios/Captura
 
-
-![Sidebar con menú Usuarios](img/screenshots/sidebar-usuarios.png)
-![Submenú Captura](img/screenshots/sidebar-captura.png)
+![Sidebar con menú Usuarios](img/screenshots/sidebarMenu.pngg)
+![Submenú Captura](img/screenshots/sidebar-submenu.png)
 
 ### 5. Formulario de alumnos y número de control
 
-
-![Formulario de alumnos con número de control](img/screenshots/alumnos-numero-control.png)
-
-### 6. Modal de edad
-
-![Modal de edad](img/screenshots/modal-edad.png)
+![Formulario de alumnos con número de control](img/screenshots/formularioValidacion.png)
 
 
 ## Capturas de pantalla — Flujo completo
