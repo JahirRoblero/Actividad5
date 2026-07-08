@@ -40,3 +40,33 @@ function mostrarApartado(apartado) {
   const sidebar = document.getElementById("sidebar");
   sidebar.classList.remove("activo");
 }
+
+
+/**PARA QUE APARESCA EL USUARIO */
+let nombreUsuario = document.getElementById("nombreUsuario");
+let usuarioActivo = sessionStorage.getItem("usuarioActivo");
+
+if (usuarioActivo) {
+    nombreUsuario.textContent = usuarioActivo;
+} else {
+    window.location.href = "login.html";
+}
+
+let usuarioDropdown = document.getElementById("usuarioDropdown");
+let usuarioBtn = document.getElementById("usuarioBtn");
+
+usuarioBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    usuarioDropdown.classList.toggle("abierto");
+});
+
+document.addEventListener("click", function () {
+    usuarioDropdown.classList.remove("abierto");
+});
+
+let btnSalir = document.getElementById("btnSalir");
+
+btnSalir.addEventListener("click", function () {
+    sessionStorage.removeItem("usuarioActivo");
+    window.location.href = "login.html";
+});

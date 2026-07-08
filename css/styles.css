@@ -258,3 +258,80 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+.emergent-label {
+    display: none;
+    color: #DC2626;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/*Usuario en el index*/
+
+.contenedor-usuario {
+    position: relative;
+}
+
+.usuario-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: inherit;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.usuario-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+#nombreUsuario {
+    margin: 0;
+}
+
+.flecha-icono {
+    transition: transform 0.2s ease;
+    color: white;
+}
+
+.contenedor-usuario.abierto .flecha-icono {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    min-width: 180px;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.contenedor-usuario.abierto .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    width: 100%;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    color: #0F172A;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #F1F5F9;
+    color: #DC2626;
+}
