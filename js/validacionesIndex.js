@@ -38,11 +38,25 @@ campoFechaNacimiento.addEventListener("blur", function () {
 
 campoNombreUsuarioCaptura.addEventListener("blur", function(){
     let esValido = soloLetras(this.value) && this.value.trim() !== "";
+
+    if(this.value.trim() === ""){
+        nombreUsuario2.innerHTML = "Campos vacios";
+        nombreUsuario2.style.display = "inline";
+        return;
+    }
+    nombreUsuario2.innerHTML ="Escribe un nombre valido";
     nombreUsuario2.style.display = esValido ? "none" : "inline";
 });
 
 campoCorreo.addEventListener("blur", function(){
     let esValido = validarCorreo(this.value) && this.value.trim() !== "";
+
+    if(this.value.trim() === ""){
+        correoElectronico.innerHTML = "Campos vacios";
+        correoElectronico.style.display = "inline";
+        return;
+    }
+    correoElectronico.innerHTML = "Correo invalido";
     correoElectronico.style.display = esValido ? "none" : "inline";
 });
 
