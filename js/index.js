@@ -41,8 +41,6 @@ function mostrarApartado(apartado) {
   sidebar.classList.remove("activo");
 }
 
-
-/**PARA QUE APARESCA EL USUARIO sessionStorage*/
 let nombreUsuario = document.getElementById("nombreUsuario");
 let usuarioActivo = sessionStorage.getItem("usuarioActivo");
 
