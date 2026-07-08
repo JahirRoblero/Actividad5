@@ -9,7 +9,7 @@
 **Actividad:** Actividad 5 — Proyecto de Login <br><br><br><br>
 **Docente:** Adelina Martínez Nieto<br><br><br><br>
 **Integrantes:**
-Gomez Roblero Angel Jahir
+Gomez Roblero Angel Jahir <br>
 Enríquez Rodríguez Alejandro Guillermo<br><br><br><br>
 **Fecha de entrega:** 08 de julio del 2026<br><br><br><br>
 
@@ -28,7 +28,7 @@ El proyecto se dividió en dos partes de trabajo:
 
 | Integrante | Parte del proyecto |
 |---|---|
-| Jahir Roblero | `index.html` — sidebar, submenú Usuarios/Captura, formulario de alumnos (número de control), modal de edad |
+|Angel Jahir Gomez Roblero | `index.html` — sidebar, submenú Usuarios/Captura, formulario de alumnos (número de control), modal de edad |
 | Alejandro Guillermo Enríquez Rodríguez | `login.html` — formulario de acceso, validaciones, navbar con usuario y dropdown de cierre de sesión |
 
 
@@ -75,23 +75,38 @@ Se usa **`sessionStorage`**, el almacenamiento temporal del navegador que dura m
 ---
 
 ## Estructura del proyecto
-
-```
-Actividad5/
-├── login.html
+PROYECTOLOGIN/
 ├── index.html
+├── login.html
 ├── README.md
 ├── css/
 │   ├── login.css
-│   └── navbar.css
+│   └── styles.css
 ├── js/
+│   ├── index.js
 │   ├── login.js
-│   ├── navbar.js
-│   └── utileria.js
+│   ├── utileria.js
+│   └── validacionesIndex.js
 └── img/
+    ├── lineasLaterales.svg
     ├── user-login.svg
-    └── screenshots/        
-```
+    ├── usuario.svg
+    └── screenshots/
+        ├── formularioValidacion.png
+        ├── login-diseno.png
+        ├── login-emergente.png
+        ├── login-estructura.png
+        ├── login-exitoso.png
+        ├── login-sessionStorage.png
+        ├── navBarFinal.png
+        ├── navbarUsuarios.png
+        ├── pantallaModalEdad.png
+        ├── PantallaPrincipal.png
+        ├── salirDelSistema.png
+        ├── sidebar-submenu.png
+        ├── sidebarMenu.png
+        ├── sidebarPrincipal.png
+        └── utileria.png
 
 ---
 
@@ -174,7 +189,7 @@ Dropdown del navbar mostrando la opción "Salir del sistema" y regreso a login.h
 
 ## Autores
 
-**Jahir Roblero** — Sidebar, submenú Usuarios/Captura, formulario de alumnos, modal de edad
+**Angel Jahir  Gomez Roblero** — Sidebar, submenú Usuarios/Captura, formulario de alumnos, modal de edad
 **Alejandro Guillermo Enríquez Rodríguez** — Login, validaciones, navbar con usuario y cierre de sesión
 
 Estudiantes de Ingeniería en Sistemas Computacionales — Instituto Tecnológico de Oaxaca
