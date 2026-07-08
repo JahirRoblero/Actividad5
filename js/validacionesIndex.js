@@ -32,7 +32,7 @@ campoNumeroControl.addEventListener("blur", function () {
 });
 
 campoFechaNacimiento.addEventListener("blur", function () {
-    let esValido = this.value !== "";
+    let esValido = fechaReal(this.value);
     fechaLabel.style.display = esValido ? "none" : "inline";
 });
 
@@ -57,7 +57,7 @@ formValidarAlumno.addEventListener("submit", function (e) {
 
     let nombreOk = soloLetras(campoNombreAlumno.value) && campoNombreAlumno.value.trim() !== "";
     let controlOk = validarNumeroControl(campoNumeroControl.value);
-    let fechaOk = campoFechaNacimiento.value !== "";
+    let fechaOk = fechaReal(campoFechaNacimiento.value);
 
     nombreLabel.style.display = nombreOk ? "none" : "inline";
     controlLabel.style.display = controlOk ? "none" : "inline";
@@ -115,4 +115,24 @@ function mostrarModalEdad(nombre, fechaNacimiento, esMayor) {
         confirmButtonColor: "#2563EB",
         
     });
+}
+
+
+
+
+function fechaReal(fechaTexto) {
+    if (!fechaTexto) return false;
+
+    let fecha = new Date(fechaTexto);
+    let hoy = new Date();
+
+    if (isNaN(fecha.getTime())) return false;  
+    if (fecha > hoy) return false;               
+
+    let edadMaxima = 120;
+    let fechaLimite = new Date();
+    fechaLimite.setFullYear(hoy.getFullYear() - edadMaxima);
+    if (fecha < fechaLimite) return false;        // demasiado antigua
+
+    return true;
 }

@@ -53,5 +53,5 @@ botonIniciar.addEventListener("click", function () {
         badgeExito.classList.remove("activo");
     }
 
-    console.log("Intento de login:", usuario, correoOk, passwordOk);
+    /*console.log("Intento de login:", usuario, correoOk, passwordOk);*/
 });

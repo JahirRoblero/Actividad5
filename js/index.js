@@ -42,7 +42,7 @@ function mostrarApartado(apartado) {
 }
 
 
-/**PARA QUE APARESCA EL USUARIO */
+/**PARA QUE APARESCA EL USUARIO sessionStorage*/
 let nombreUsuario = document.getElementById("nombreUsuario");
 let usuarioActivo = sessionStorage.getItem("usuarioActivo");
 
