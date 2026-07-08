@@ -15,8 +15,6 @@ Enríquez Rodríguez Alejandro Guillermo<br><br><br><br>
 
 </div>
 
----
-
 # Sistema de Acceso — Actividad 5
 
 ## Descripción del proyecto
@@ -33,7 +31,6 @@ El proyecto se dividió en dos partes de trabajo:
 | Jahir Roblero | `index.html` — sidebar, submenú Usuarios/Captura, formulario de alumnos (número de control), modal de edad |
 | Alejandro Guillermo Enríquez Rodríguez | `login.html` — formulario de acceso, validaciones, navbar con usuario y dropdown de cierre de sesión |
 
----
 
 ## Documentación técnica
 
@@ -42,9 +39,9 @@ El proyecto usa **CSS puro** (sin Bootstrap ni Tailwind), con estilos personaliz
 
 ### Flujo del login hacia el sistema
 1. El usuario llena los campos de **correo** y **contraseña** en `login.html`.
-2. Al perder el foco (`blur`) de cada campo, se valida en tiempo real usando las funciones `validarCorreo()` y `validarPassword()` de `js/utileria.js`. Si el dato no es válido, se muestra un mensaje de error (`emergent-label`) debajo del campo correspondiente.
+2. Al perder el foco (`blur`) de cada campo, se valida en tiempo real usando las funciones `validarCorreo()` y `validarPassword()` de `js/utileria.js`. Si el dato no es válido, se muestra un mensaje de error debajo del campo correspondiente.
 3. Al dar clic en el botón **LOGIN**, se vuelven a validar ambos campos.
-4. Si ambos son válidos, se muestra el `badge-exito` ("Inicio de sesión válido") y, después de un breve momento, la página redirige automáticamente a `index.html`.
+4. Si ambos son válidos, se muestra ("Inicio de sesión válido") y, después de un breve momento, la página redirige automáticamente a `index.html`.
 5. Si `index.html` se abre directamente sin haber iniciado sesión (sin dato guardado), el sistema redirige de regreso a `login.html`.
 
 ### Cómo se pasa el usuario del login al navbar
@@ -74,7 +71,6 @@ Se usa **`sessionStorage`**, el almacenamiento temporal del navegador que dura m
 | Dropdown de usuario (`click` + `classList.toggle`) | `js/navbar.js` | Abre/cierra el menú con la opción "Salir del sistema" |
 | `sessionStorage.removeItem()` | `js/navbar.js` | Cierra la sesión y regresa a `login.html` |
 
-*(Sección a completar por Jahir: métodos del submenú Usuarios/Captura, validación de número de control y modal de edad.)*
 
 ---
 
@@ -141,13 +137,12 @@ Actividad5/
 
 ![Modal de edad](img/screenshots/modal-edad.png)
 
----
 
 ## Capturas de pantalla — Flujo completo
 
 ### 1. Login
 Pantalla de acceso con validación de correo y contraseña.
-![Login](img/screenshots/login-diseño.png)
+![Login](img/screenshots/login-diseno.png)
 
 ### 2. Login exitoso
 Mensaje de confirmación antes de redirigir al sistema.
@@ -155,19 +150,19 @@ Mensaje de confirmación antes de redirigir al sistema.
 
 ### 3. Sistema (index.html)
 Vista del sistema ya dentro, con sidebar y navbar mostrando el usuario.
-![Sistema](img/screenshots/flujo-3-sistema.png)
+![Sistema](img/screenshots/PantallaPrincipalSistena.png)
 
-### 4. Submenú Usuarios / Captura
-![Captura de usuarios](img/screenshots/flujo-4-captura-usuarios.png)
+
+### 4. Submenú Usuarios 
+![sidebar](img/screenshots/sidebarPrincipal.png)
 
 ### 5. Formulario de alumnos y modal de edad
-![Modal de edad](img/screenshots/flujo-5-modal-edad.png)
+![Modal de edad](img/screenshots/pantallaModalEdad.png)
 
 ### 6. Cierre de sesión
 Dropdown del navbar mostrando la opción "Salir del sistema" y regreso a login.html.
-![Cierre de sesión](img/screenshots/flujo-6-logout.png)
+![Cierre de sesión](img/screenshots/salirDelSistema.png)
 
----
 
 ## Tecnologías utilizadas
 
@@ -175,7 +170,6 @@ Dropdown del navbar mostrando la opción "Salir del sistema" y regreso a login.h
 - **CSS3** — estilos personalizados (sin framework)
 - **JavaScript** — validaciones (`utileria.js`), manejo de sesión (`sessionStorage`) y control de interfaz (dropdown, sidebar, modal)
 
----
 
 ## Ver en vivo
 
@@ -183,7 +177,6 @@ Dropdown del navbar mostrando la opción "Salir del sistema" y regreso a login.h
 
 🔗 **Repositorio:** https://github.com/JahirRoblero/Actividad5
 
----
 
 ## Autores
 
