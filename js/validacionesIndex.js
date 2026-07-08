@@ -1,12 +1,20 @@
 let campoNombreAlumno = document.getElementById("nombreAlumno");
 let campoNumeroControl = document.getElementById("numeroControl");
 let campoFechaNacimiento = document.getElementById("fechaNacimiento");
+let campoCorreo = document.getElementById("correo");
+let campoContraseña = document.getElementById("contraseña");
 
 let nombreLabel = document.getElementById("nombre-label");
 let controlLabel = document.getElementById("n-control");
 let fechaLabel = document.getElementById("f-nacimiento");
+let nombreUsuario2 = document.getElementById("nombreUsuario2");
+let correoElectronico =  document.getElementById("correoElectronico");
+let contraseñaLabel = document.getElementById("contraseñaLabel");
+
+let campoNombreUsuarioCaptura = document.getElementById("nombreUsuarioCaptura");
 
 let formValidarAlumno = document.getElementById("formValidarAlumno");
+let formCapturaUsuario = document.getElementById("formCapturaUsuario");
 
 function validarNumeroControl(valor) {
     if (!/^\d+$/.test(valor)) return false;
@@ -28,6 +36,22 @@ campoFechaNacimiento.addEventListener("blur", function () {
     fechaLabel.style.display = esValido ? "none" : "inline";
 });
 
+campoNombreUsuarioCaptura.addEventListener("blur", function(){
+    let esValido = soloLetras(this.value) && this.value.trim() !== "";
+    nombreUsuario2.style.display = esValido ? "none" : "inline";
+});
+
+campoCorreo.addEventListener("blur", function(){
+    let esValido = validarCorreo(this.value) && this.value.trim() !== "";
+    correoElectronico.style.display = esValido ? "none" : "inline";
+});
+
+campoContraseña.addEventListener("blur", function() {
+    let esValido = validarPassword(this.value) && this.value.trim() != "";
+    contraseñaLabel.style.display = esValido ? "none" : "inline";
+});
+
+
 formValidarAlumno.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -45,17 +69,50 @@ formValidarAlumno.addEventListener("submit", function (e) {
     }
 });
 
+
+formCapturaUsuario.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let nombreOk = soloLetras(campoNombreUsuarioCaptura.value) && campoNombreUsuarioCaptura.value.trim() != "";
+    let correoOk = validarCorreo(campoCorreo.value) && campoCorreo.value.trim() != "";
+    let contraseñaOk = validarPassword(campoContraseña.value) && campoContraseña.value.trim() != "";
+
+     nombreUsuario2.style.display = nombreOk ? "none" : "inline";
+    correoElectronico.style.display = correoOk ? "none" : "inline";
+    contraseñaLabel.style.display = contraseñaOk ? "none" : "inline";
+
+     if(nombreOk && correoOk && contraseñaOk){
+        Swal.fire({
+            icon: "success",
+            title: "Usuario capturado correctamente",
+            html: `
+                <p style="color:black;">El usuario <b>${campoNombreUsuarioCaptura.value}</b> fue registrado con éxito.</p>
+                <p style="color:black;">Correo: <b>${campoCorreo.value}</b></p>
+            `,
+            confirmButtonText: "Aceptar",
+            confirmButtonColor: "#2563eb",
+            background: "#f8fafc",
+            color: "#0f172a",
+            iconColor: "#16a34a",
+            timer: 3000,
+            timerProgressBar: true
+        });
+    }
+    
+})
+
 function mostrarModalEdad(nombre, fechaNacimiento, esMayor) {
     let edad = calcularEdad(fechaNacimiento);
 
     Swal.fire({
-        icon: esMayor ? "success" : "warning",
+        icon: "success",
         title: "Datos validados correctamente",
         html: `Edad calculada: <b>${edad} años</b>.<br>` +
               (esMayor
                 ? "El usuario es mayor de edad."
                 : "El usuario es menor de edad."),
         confirmButtonText: "Aceptar",
-        confirmButtonColor: "#2563EB"
+        confirmButtonColor: "#2563EB",
+        
     });
 }

@@ -24,6 +24,10 @@ p {
   margin-left: 10px;
 }
 
+.swal2-html-container {
+  font-family: "SN Pro", sans-serif;
+}
+
 h2{
   font-family: "SN Pro", sans-serif;
   font-optical-sizing: auto;
@@ -98,10 +102,10 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ffffff8e;
   border-radius: 8px;
   padding-right: 5px;
   padding-left: 5px;
+  max-width: 200px;
 }
 
 #imagenUsuario {
@@ -264,10 +268,10 @@ footer {
     color: #DC2626;
     font-size: 12px;
     margin-top: 5px;
+    font-family: "SN Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
 }
-
-
-/*Usuario en el index*/
 
 .contenedor-usuario {
     position: relative;
@@ -282,7 +286,7 @@ footer {
     color: inherit;
     padding: 6px 12px;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 1.2vh;
     cursor: pointer;
 }
 

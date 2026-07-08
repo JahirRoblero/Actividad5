@@ -27,7 +27,6 @@
         <h1>Usuarios</h1>
       </div>
 
-      <!--LO MODIFIQUE PARA QUE APARESCA EL CORREO QUE INGRESA EN LOGIN-->
        <div class="contenedor-usuario" id="usuarioDropdown">
             <button class="usuario-btn" id="usuarioBtn" type="button">
               <img id="imagenUsuario" src="img/usuario.svg" />
@@ -59,6 +58,7 @@
             id="nombreUsuarioCaptura"
             placeholder="Ej. Angel Jahir"
           />
+          <span class="emergent-label" id="nombreUsuario2">Nombre no valido</span>
 
           <label for="correo">Correo electrónico:</label>
           <input
@@ -66,15 +66,17 @@
             id="correo"
             placeholder="Ej. Jahirgomezyt2@gmail.com"
           />
+          <span class="emergent-label" id="correoElectronico">Correo electronico invalido</span>
 
           <label for="contraseña">Contraseña:</label>
           <input type="password" id="contraseña" />
+          <span class="emergent-label" id="contraseñaLabel">Contraseña insegura</span>
 
           <button type="submit">Guardar Usuario</button>
         </div>
       </form>
 
-      <form id="formValidarAlumno" class="apartado oculto">
+      <form id="formValidarAlumno" class="apartado">
         <div class="formulario">
           <h2>Validar alumno</h2>
 
