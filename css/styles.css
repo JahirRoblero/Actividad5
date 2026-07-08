@@ -262,7 +262,7 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
+/*Letras rojas debajo de los input*/
 .emergent-label {
     display: none;
     color: #DC2626;

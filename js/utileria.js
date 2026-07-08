@@ -22,6 +22,7 @@ function validarCorreo(correo) {
         })) 
         {
         return respuesta;
+        
     }
 
      respuesta = true;

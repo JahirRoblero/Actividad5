@@ -152,6 +152,7 @@ Vista del sistema ya dentro, con sidebar y navbar mostrando el usuario.
 
 ### 5. Formulario de alumnos y modal de edad
 ![Modal de edad](img/screenshots/pantallaModalEdad.png)
+![Modal de edad](img/screenshots/pantallaModalEdad-menor.png)
 
 ### 6. Cierre de sesión
 Dropdown del navbar mostrando la opción "Salir del sistema" y regreso a login.html.
