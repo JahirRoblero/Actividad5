@@ -1,19 +1,2 @@
-# Archivos de configuración del editor
 .vscode/
 .idea/
-
-# Archivos del sistema operativo
-Thumbs.db
-desktop.ini
-.DS_Store
-
-# Archivos temporales o de respaldo
-*.tmp
-*.bak
-*.log
-
-# Variables de entorno (por si en el futuro agregan backend/credenciales)
-.env
-
-# Dependencias (por si en el futuro usan npm, ej. para instalar SweetAlert2 vía paquete)
-node_modules/
