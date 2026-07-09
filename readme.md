@@ -9,7 +9,7 @@
 **Actividad:** Actividad 5 — Proyecto de Login <br><br><br><br>
 **Docente:** Adelina Martínez Nieto<br><br><br><br>
 **Integrantes:**
-Jahir Roblero
+Gomez Roblero Angel Jahir <br>
 Enríquez Rodríguez Alejandro Guillermo<br><br><br><br>
 **Fecha de entrega:** 08 de julio del 2026<br><br><br><br>
 
@@ -28,7 +28,7 @@ El proyecto se dividió en dos partes de trabajo:
 
 | Integrante | Parte del proyecto |
 |---|---|
-| Jahir Roblero | `index.html` — sidebar, submenú Usuarios/Captura, formulario de alumnos (número de control), modal de edad |
+|Angel Jahir Gomez Roblero | `index.html` — sidebar, submenú Usuarios/Captura, formulario de alumnos (número de control), modal de edad |
 | Alejandro Guillermo Enríquez Rodríguez | `login.html` — formulario de acceso, validaciones, navbar con usuario y dropdown de cierre de sesión |
 
 
@@ -77,20 +77,38 @@ Se usa **`sessionStorage`**, el almacenamiento temporal del navegador que dura m
 ## Estructura del proyecto
 
 ```
-Actividad5/
-├── login.html
+PROYECTOLOGIN/
 ├── index.html
+├── login.html
 ├── README.md
 ├── css/
 │   ├── login.css
-│   └── navbar.css
+│   └── styles.css
 ├── js/
+│   ├── index.js
 │   ├── login.js
-│   ├── navbar.js
-│   └── utileria.js
+│   ├── utileria.js
+│   └── validacionesIndex.js
 └── img/
+    ├── lineasLaterales.svg
     ├── user-login.svg
-    └── screenshots/        
+    ├── usuario.svg
+    └── screenshots/
+        ├── formularioValidacion.png
+        ├── login-diseno.png
+        ├── login-emergente.png
+        ├── login-estructura.png
+        ├── login-exitoso.png
+        ├── login-sessionStorage.png
+        ├── navBarFinal.png
+        ├── navbarUsuarios.png
+        ├── pantallaModalEdad.png
+        ├── PantallaPrincipal.png
+        ├── salirDelSistema.png
+        ├── sidebar-submenu.png
+        ├── sidebarMenu.png
+        ├── sidebarPrincipal.png
+        └── utileria.png   
 ```
 
 ---
@@ -119,23 +137,17 @@ Actividad5/
 ### 3. Navbar (dentro de index.html)
 
 
-![Navbar con nombre de usuario](img/screenshots/navbar-usuario.png)
-![Dropdown abierto con opción Salir del sistema](img/screenshots/navbar-dropdown.png)
+![Navbar con nombre de usuario](img/screenshots/navbarUsuarios.png)
+![Dropdown abierto con opción Salir del sistema](img/screenshots/navBarFinal.png)
 
 ### 4. Sidebar y submenú Usuarios/Captura
 
-
-![Sidebar con menú Usuarios](img/screenshots/sidebar-usuarios.png)
-![Submenú Captura](img/screenshots/sidebar-captura.png)
+![Sidebar con menú Usuarios](img/screenshots/sidebarMenu.png)
+![Submenú Captura](img/screenshots/sidebar-submenu.png)
 
 ### 5. Formulario de alumnos y número de control
 
-
-![Formulario de alumnos con número de control](img/screenshots/alumnos-numero-control.png)
-
-### 6. Modal de edad
-
-![Modal de edad](img/screenshots/modal-edad.png)
+![Formulario de alumnos con número de control](img/screenshots/formularioValidacion.png)
 
 
 ## Capturas de pantalla — Flujo completo
@@ -158,7 +170,6 @@ Vista del sistema ya dentro, con sidebar y navbar mostrando el usuario.
 
 ### 5. Formulario de alumnos y modal de edad
 ![Modal de edad](img/screenshots/pantallaModalEdad.png)
-![Modal de edad](img/screenshots/pantallaModalEdad-menor.png)
 
 ### 6. Cierre de sesión
 Dropdown del navbar mostrando la opción "Salir del sistema" y regreso a login.html.
@@ -181,7 +192,7 @@ Dropdown del navbar mostrando la opción "Salir del sistema" y regreso a login.h
 
 ## Autores
 
-**Jahir Roblero** — Sidebar, submenú Usuarios/Captura, formulario de alumnos, modal de edad
+**Angel Jahir  Gomez Roblero** — Sidebar, submenú Usuarios/Captura, formulario de alumnos, modal de edad
 **Alejandro Guillermo Enríquez Rodríguez** — Login, validaciones, navbar con usuario y cierre de sesión
 
 Estudiantes de Ingeniería en Sistemas Computacionales — Instituto Tecnológico de Oaxaca
